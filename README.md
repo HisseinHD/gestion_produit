@@ -29,7 +29,7 @@ Une API RESTful pour la gestion de produits, construite avec Node.js, Express.js
 1. Cloner le dépôt :
 
     ```bash
-    git clone [votre-lien-git]
+    git clone git@github.com:HisseinHD/gestion_produit.git
     cd gestion_produit
     ```
 
@@ -41,7 +41,7 @@ Une API RESTful pour la gestion de produits, construite avec Node.js, Express.js
 
 3. Configurer l'environnement :
    - Créer un fichier `.env` à la racine
-   - Ajouter vos variables d'environnement (ex: `MONGO_URI`, `JWT_SECRET`)
+   - Ajouter vos variables d'environnement (ex: `MONGO_URI`, `PORT`)
 
 4. Démarrer le serveur :
 
@@ -54,7 +54,7 @@ Une API RESTful pour la gestion de produits, construite avec Node.js, Express.js
 5. Le serveur tourne sur :
 
     ```bash
-    http://localhost:3000
+    http://localhost:5000
     ```
 
 ---
