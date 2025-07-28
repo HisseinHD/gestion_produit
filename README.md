@@ -10,13 +10,14 @@ Une API RESTful pour la gestion de produits, construite avec Node.js, Express.js
 - Mettre à jour un produit
 - Changer le statut de stock d'un produit
 - Supprimer un produit
+<img width="287" height="249" alt="Capture d’écran du 2025-07-28 13-14-30" src="https://github.com/user-attachments/assets/4e753ce5-cc9f-441b-b0b8-89313575bb46" />
+
 
 ## Stack Technologique
 
 - Node.js
 - Express.js
 - MongoDB (via Mongoose)
-- JWT (Authentification)
 
 ## Prérequis
 
@@ -41,7 +42,7 @@ Une API RESTful pour la gestion de produits, construite avec Node.js, Express.js
 
 3. Configurer l'environnement :
    - Créer un fichier `.env` à la racine
-   - Ajouter vos variables d'environnement (ex: `MONGO_URI`, `PORT`)
+   - Ajouter les variables d'environnement ( `MONGO_URI= mongodb://127.0.0.1:27017/productsDB`, `PORT=5000`)
 
 4. Démarrer le serveur :
 
@@ -63,22 +64,21 @@ Une API RESTful pour la gestion de produits, construite avec Node.js, Express.js
 
 ### Créer un produit
 - **Méthode**: `POST`
-- **URL**: `/`
+- **URL**: `http://www.localhost:5000/api/products`
 - **Body**: `raw` → `JSON`
 
 ```json
 {
-  "name": "Produit A",
-  "description": "Description du produit",
-  "price": 29.99,
-  "inStock": true
+        "productName": "Clavier RGB",
+        "price": 55000,
+        "stockStatus": "pas en stock"
 }
 ```
 ## Référence API
 
 ### Obtenir tous les produits
 - **Méthode**: `GET`
-- **URL**: `/api/products`
+- **URL**: `http://www.localhost:5000/api/products`
 - **Réponse réussie**: `200 OK`
 
 **Exemple de réponse :**
@@ -97,3 +97,19 @@ Une API RESTful pour la gestion de produits, construite avec Node.js, Express.js
         "stockStatus": "pas en stock"
     }
 ]
+```
+### Obtenir  produit par son ID
+- **Méthode**: `GET`
+- **URL**: `/api/products/:id`
+- **Réponse réussie**: `200 OK`
+<img width="755" height="510" alt="Capture d’écran du 2025-07-28 13-12-08" src="https://github.com/user-attachments/assets/c4b89071-e679-426a-b6f7-4ee2194fef82" />
+
+### Supprimer un produit par son ID
+- **Méthode**: `DELETE`
+- **URL**: `/api/products/:id`
+- **Réponse réussie**: `200 OK`
+<img width="835" height="465" alt="Capture d’écran du 2025-07-28 13-14-15" src="https://github.com/user-attachments/assets/a75457d4-9855-4bf6-b7c7-f190b76c6ee3" />
+
+
+
+
