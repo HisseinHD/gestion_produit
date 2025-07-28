@@ -59,7 +59,9 @@ Une API RESTful pour la gestion de produits, construite avec Node.js, Express.js
     ```
 
 ---
-
+## Pour Teste Directement depuis POSTMAN
+### Vous Pouvez cliquer sur le lien ci dessous
+https://web.postman.co/workspace/My-Workspace~c696a576-a5b2-4097-8282-998a7d8202ed/request/38643666-1ba6d282-2367-415e-be98-72ce66edecc3?action=share&source=copy-link&creator=38643666
 ## Référence API
 
 ### Créer un produit
