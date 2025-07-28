@@ -73,3 +73,27 @@ Une API RESTful pour la gestion de produits, construite avec Node.js, Express.js
   "price": 29.99,
   "inStock": true
 }
+```
+## Référence API
+
+### Obtenir tous les produits
+- **Méthode**: `GET`
+- **URL**: `/api/products`
+- **Réponse réussie**: `200 OK`
+
+**Exemple de réponse :**
+```json
+[
+    {
+        "_id": "68833637f58674aa0a4c9ec8",
+        "productName": "Clavier mécanique RGB",
+        "price": 60000,
+        "stockStatus": "en stock"
+    },
+    {
+        "_id": "6883594dbeaddfe9b66762d8",
+        "productName": "Clavier RGB",
+        "price": 55000,
+        "stockStatus": "pas en stock"
+    }
+]
